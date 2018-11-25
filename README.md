@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+# SGS
+Sistema de Gestion de Seguros
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -44,6 +46,3 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 =======
-# SGS
-Sistema de Gestion de Seguros
->>>>>>> 2373b14cae2cdbc3096b0c7e4121acafb9da8e33
