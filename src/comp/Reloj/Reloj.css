@@ -1,0 +1,9 @@
+.reloj{
+  width: fit-content;
+  height: fit-content;
+  background-image: url('./RelojBackground.jpg');
+}
+p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+  }
