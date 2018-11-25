@@ -13,8 +13,8 @@ class ClientsPage extends React.Component {
       <div className={'AppClientsPage'}>
         <MenuBar/>
         <Header title={'Sistema de Gestion de Seguros'}/>
-        <h2>Area de Clientes</h2>
-        <ClientsList clients={ClientsData}/>
+        <h1>Area de Clientes</h1>
+        <ClientsList title={'Listado de Clientes'} clientes={ClientsData}/>
         <Footer/>
       </div>
     )

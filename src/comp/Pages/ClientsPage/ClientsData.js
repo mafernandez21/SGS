@@ -1,54 +1,50 @@
 export const ClientsData = [
   {
-    name:'Martin Alejandro',
-    lastName:'Fernandez',
-    nClient:1,
-    domain:'AA123BB',
-    payments:[
+    id:0,
+    nombre:'Martin',
+    apellido:'Fernandez',
+    dominio:'ABC123',
+    pagos:[
       {
-        n:'',
-        date:'',
-        amount:'',
-        coupon:''
-      },
-      {
-        n:'',
-        date:'',
-        amount:'',
-        coupon:''
-      },
-      {
-        n:'',
-        date:'',
-        amount:'',
-        coupon:''
+        id:'',
+        fecha:'',
+        monto:'',
+        cupon:''
       }
     ]
   },
   {
-    name:'Alejandro',
-    lastName:'Fernandez',
-    nClient:2,
-    domain:'AC239OM',
-    payments:[
+    id:1,
+    nombre:'Alejandro',
+    apellido:'Fernandez',
+    dominio:'AC239OM',
+    pagos:[
       {
-        n:'',
-        date:'',
-        amount:'',
-        coupon:''
+        id:'',
+        fecha:'',
+        monto:'',
+        cupon:''
       },
       {
-        n:'',
-        date:'',
-        amount:'',
-        coupon:''
+        id:'',
+        fecha:'',
+        monto:'',
+        cupon:''
       },
       {
-        n:'',
-        date:'',
-        amount:'',
-        coupon:''
+        id:'',
+        fecha:'',
+        monto:'',
+        cupon:''
       }
     ]
   },
+  {
+    id:2,
+    nombre:'Emilia',
+    apellido:'Salomon',
+    dominio:'SGS001',
+    pagos:[]
+  },
+  
 ];

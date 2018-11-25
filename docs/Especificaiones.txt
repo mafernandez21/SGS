@@ -1,0 +1,25 @@
+Cliente{
+  IdCliente: number
+  Numero: number
+  Nombre: string
+  Apellido: string
+  Dominio: string, Regxp ([a-z | A-Z]){2}([0-9]){3}([a-z | A-Z]){2}|([a-z | A-Z]){3}([0-9]){3}
+  Polizas: array(Polizas)
+}
+
+Polizas{
+  IdPoliza: number
+  Numero: string
+  FechaInicioVigencia: DateTime
+  FechaFinVigencia: DateTime
+  Pagos: array(Pagos)
+}
+
+Pago{
+  IdPago: number
+  Monto: Currency
+  Cupon: string
+  NumeroPago: number
+  FechaPago: DateTime
+  FechaUpdate: DateTime
+}
