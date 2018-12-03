@@ -1,0 +1,9 @@
+@import '../../../Shared/stylesheet/Base.scss';
+
+.AppFooter{
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  color: $footer-face-color;
+  background-color: $footer-bg-color;
+}

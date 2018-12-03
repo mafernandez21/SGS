@@ -1,48 +1,41 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
-import './MenuBar.css'
+//import './stylesheet/MenuBar.css';
+import './stylesheet/MenuBar.scss';
 
-const MenuBar = () => (
-  <div className={'AppMenuBar'}>
-    <ul>
-        <Link to={'/home'}><li className={'menu'}>Home</li></Link>
-        <Link to={'/clients'}><li className={'menu'}>Clientes</li></Link>
-          <ul>
-            <Link to={'/clients/manager'}><li className={'menu'}>Gestion de Clientes</li></Link>
-            <Link to={'/clients/informs'}><li className={'menu'}>Informes de Clientes</li></Link>
-            <Link to={'/clients/list'}><li className={'menu'}>Listado de Clientes</li></Link>
-          </ul>
-        <Link to={'/providers'}><li className={'menu'}>Proveedores</li></Link>
-        <Link to={'/help'}><li className={'menu'}>Ayuda</li></Link>
-    </ul>
-  </div>
-);
+const MenuBar = ( { user, isLogged, orientacion } ) => {
+  const menuOrientation=(orientacion && orientacion==='v')?'V':'H';
+  return (
+    <React.Fragment>
+      <ul className = { `${ menuOrientation }Menu` }>
+        <li className = { `${ menuOrientation }MenuItem` }><Link to = { '/home' }>Inicio</Link></li>
+        <li className = { `${ menuOrientation }MenuItem` }><Link to = { '/users' }>Usuarios</Link></li>
+        <li className = { `${ menuOrientation }MenuContainer` }>
+          <Link to={'/clients'}>Clientes</Link>
+          <div className = { `${ menuOrientation }MenuContainerItem` } >
+            <Link to={'/clients/manager'}>Gestion de Clientes</Link>
+            <Link to={'/clients/informs'}>Informes de Clientes</Link>
+            <Link to={'/clients/list'}>Listado de Clientes</Link>
+          </div>
+        </li>
+        <li className = { `${ menuOrientation }MenuItem` }><Link to={'/providers'}>Proveedores</Link></li>
+        <li className = { `${ menuOrientation }MenuItem` }><Link to={'/logout'}>{ `Salir ${(isLogged)?`(${ user })`:`${''}`}` }</Link></li>
+      </ul>
+    </React.Fragment>
+  );
+}
+
+MenuBar.prototypes={
+  orientacion:PropTypes.string.isRequired,
+  user:PropTypes.string.isRequired,
+  isLogged:PropTypes.bool.isRequired,
+}
+
+MenuBar.defaultprops ={
+  orientacion:'h',
+  user:'',
+  isLogged:false
+}
 
 export default MenuBar;
-
-//<Link to={'/contact-search'}><li>Buscar</li></Link>
-
-/*
- <div className={'AppMenuBar'}>
-    <ul>
-        <Link to={'/home'}><li className={'menu'}>Home</li></Link>
-        <li className={'dropdown-menu'}>
-            <Link to={'/clients'} className={'dropdown-menu-btn'}>Clientes</Link>
-              <div className={'dropdown-submenu'}>
-                <Link to={'/#'} className={'dropdown-submenu-item'}>Gestión de Clientes</Link>
-                <Link to={'/#'} className={'dropdown-submenu-item'}>Listado de Clientes</Link>
-                <Link to={'/#'} className={'dropdown-submenu-item'}>Informes de Clientes</Link>
-              </div>
-        </li>
-        <li className={'dropdown-menu'}>
-            <Link to={'/providers-area'} className={'dropdown-menu-btn'}>Proveedores</Link>
-              <div className={'dropdown-submenu'}>
-                <Link to={'/#'} className={'dropdown-submenu-item'}>Gestión de Proveedores</Link>
-                <Link to={'/#'} className={'dropdown-submenu-item'}>Listado de Proveedores</Link>
-                <Link to={'/#'} className={'dropdown-submenu-item'}>Informes de Proveedores</Link>
-              </div>
-        </li>
-        <Link to={'/#'}><li className={'menu'}>Ayuda</li></Link>
-    </ul>
-  </div>
- */

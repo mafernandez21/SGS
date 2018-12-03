@@ -1,0 +1,65 @@
+.AppHMenuBar{
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.HMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:$menu-color;
+}
+
+.HMenuItem, .HMenuContainer { 
+  float: left;
+  a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+}
+
+.HMenuContainer:hover{
+  background-color:$menu-color-hover;
+}
+
+.HMenuContainerItem {
+  a:hover{
+    background-color:$sub-menu-color-hover;
+  }
+}
+
+.HMenuItem{
+  a:hover{
+    background-color:$menu-color-hover;
+  }
+}
+
+.HMenuItem, .HMenuContainer {
+  display: inline-block;
+}
+
+.HMenuContainerItem {
+  display: none;
+  position: absolute;
+  background-color: $sub-menu-color;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.HMenuContainerItem a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.HMenuContainer:hover .HMenuContainerItem {
+  display: block;
+}

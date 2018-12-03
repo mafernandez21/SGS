@@ -1,21 +1,25 @@
 import React from 'react';
-import './Footer.css'
-import IconButton from '@material-ui/core/IconButton';
-import HomeIcon from '@material-ui/icons/Home';
-import {Link} from 'react-router-dom';
-import Reloj from '../../Reloj/Reloj';
+import './stylesheet/Footer.scss'
+//import IconButton from '@material-ui/core/IconButton';
+//import HomeIcon from '@material-ui/icons/Home';
+//import {Link} from 'react-router-dom';
+import Clock from '../../Clock/Clock';
 
 const Footer = () => {
   return (
     <div className={ 'AppFooter' }>
-      <Link to={ '/home' }>
-        <IconButton>
-          <HomeIcon fontSize={'large'}/>
-        </IconButton>
-      </Link>
-      <Reloj titulo={'Hora Actual'}></Reloj>
+      <Clock titulo={'Hora Actual'}/>
     </div>
   );
 };
 
 export default Footer;
+
+
+/*
+<Link to={ '/home' }>
+  <IconButton>
+    <HomeIcon fontSize={'large'}/>
+  </IconButton>
+</Link>
+*/

@@ -1,8 +1,9 @@
 import React from 'react';
-import './AppBody.css';
+import './stylesheet/Body.scss';
 import {Redirect,Route,Switch} from 'react-router-dom';
 import NotFoundPage from '../../Pages/NotFoundPage/NotFoundPage';
 import HomePage from '../../Pages/HomePage/HomePage';
+import UsersPage from '../../Pages/UsersPage/UsersPage';
 import ClientsPage from '../../Pages/ClientsPage/ClientsPage';
 //import ClientCRUDPage from '../../clientCRUD/clientCRUD';
 
@@ -11,7 +12,9 @@ const AppBody = () => (
     <Switch>
       <Redirect from={'/home'} to={'/'}/>
       <Route exact path="/" component={HomePage}/>
+      <Route exact path="/users" component={UsersPage}/>
       <Route exact path="/clients" component={ClientsPage}/>
+      <Route exact path="/clients/list" component={ClientsPage}/>
       <Route component={NotFoundPage}/>
     </Switch>
   </div>

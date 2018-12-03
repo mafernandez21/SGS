@@ -6,6 +6,7 @@ import {Cliente} from '../../../../Modelos/Cliente';
 const ClientListItem = ({cliente}) => {
   return(
     <div className='client-list-item'>
+      <p><img src='' alt='Foto'></img></p> 
       <p><label>{`Nombre: ${cliente.nombre}`}</label></p>
       <p><label>{`Apellido: ${cliente.apellido}`}</label></p>
       <p><label>{`Dominio: ${cliente.dominio}`}</label></p>

@@ -1,0 +1,62 @@
+@import '../../../../Shared/stylesheet/Base.scss';
+
+.LoginForm{
+  border: 1px dotted #000000;
+  width: 30%;
+  margin: auto;
+}
+
+.LoginErrorForm{
+  border: 2px dotted #FF0000;
+  width: 30%;
+  margin: auto;
+}
+
+.LoginLabel{
+  font-family: $app-font-family;
+  font-size: 20px;
+  float: left;
+}
+
+.LoginInput{
+  font-family: $app-font-family;
+  font-size: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.LoginButton{
+  margin: 10px auto auto auto;
+  font-family: $app-font-family;
+  font-size: 20px;
+  color: $app-face-color;
+  height: 60px;
+  width: 180px;
+  background-color: $app-bg-color;
+  border-radius: 30px;
+}
+
+.LoginButton:hover{
+  color: $app-bg-color;
+  background-color: $app-face-color;
+}
+
+.LoginButton:active{
+  color: $app-face-color;
+  background-color: $app-bg-color;
+}
+
+.LoginLinkVisible{
+  font-family: $app-font-family;
+  font-size: 15px;
+  width: 30%;
+  margin: auto;
+}
+
+.LoginLinkHidden{
+  visibility: hidden;
+  font-family: $app-font-family;
+  font-size: 15px;
+  width: 30%;
+  margin: auto;
+}

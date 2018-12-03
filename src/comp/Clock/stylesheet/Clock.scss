@@ -1,0 +1,12 @@
+$app-bg-color:#000052;
+$app-face-color:#fafafa;
+
+.clock-face-text {
+    text-align: right;
+    color: $app-face-color;
+    font-size: 15px;
+    width: fit-content;
+    height: fit-content;
+    background-color: $app-bg-color;
+    background-image: url('./ClockBg.jpg');
+}

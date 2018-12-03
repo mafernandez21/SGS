@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router} from 'react-router-dom'
-import AppBody from './comp/Layout/AppBody/AppBody';
+import Body from './comp/Layout/Body/Body';
 //import MenuBar from './comp/layout/comp/menuBar/MenuBar';
 
 
@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
       <Router>
         <div className="App">
-          <AppBody/>
+          <Body/>
         </div>
       </Router>
     );

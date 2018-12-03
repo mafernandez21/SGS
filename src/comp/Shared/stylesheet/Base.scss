@@ -1,0 +1,81 @@
+$menu-color:#0c035e;
+$menu-color-hover:#4334cf;
+$sub-menu-color:#be8303;
+$sub-menu-color-hover:#c0ae88;
+
+$footer-bg-color:#000052;
+$footer-face-color:#fafafa;
+
+$header-bg-color:#000052;
+$header-face-color:#fafafa;
+
+$app-bg-color:#000052;
+$app-face-color:#fafafa;
+
+$app-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//$app-font-family:'Times New Roman', Times, serif;
+
+
+.app-header{
+  font-family: $app-font-family;
+  position: sticky;
+  top:0;
+  border: 1px dotted #000000;
+  padding: 1px 1px 1px 1px;
+  z-index: 100;
+}
+
+.app-nav{
+  font-family: $app-font-family;
+  border: 1px dotted #000000;
+  padding: 1px 1px 1px 1px;
+}
+
+.app-title{
+  font-family: $app-font-family;
+  border: 1px dotted #000000;
+  padding: 1px 1px 1px 1px;
+}
+
+.app-footer{
+  font-family: $app-font-family;
+  position: sticky;
+  text-align: right;
+  bottom:0;
+  border: 1px dotted #000000;
+  padding: 1px 1px 1px 1px;
+}
+
+.app-aside-right{
+  font-family: $app-font-family;
+  padding: 10px;
+  margin-right: 10px;
+  position: relative;
+  top:0px;
+  float: right;
+  width: 15%;
+  border: 1px dotted #000000;
+  z-index: -1;
+}
+
+.app-aside-left{
+  font-family: $app-font-family;
+  padding: 10px;
+  margin-left: 10px;
+  position: relative;
+  top:0px;
+  float: left;
+  width: 15%;
+  border: 1px dotted #000000;
+  z-index: -1;
+}
+
+.app-content{
+  font-family: $app-font-family;
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  border: 1px dotted #000000;
+  padding-top: 10px;
+  z-index: -1;
+}
